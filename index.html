@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Poker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Logo do Jogo de Poker">
+                <div>
+                    <h1>+PraPoker</h1>
+                    <p>O melhor lugar para jogar poker online</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#produtos">Nossos Serviços</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="background-image">
+        <section id="produtos">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li><i class="fas fa-trophy"></i> Torneios Diários</li>
+                <div class="single-image">
+                    <img src="images/torneio.jpg" alt="Torneios Diários">
+                </div>
+                <li><i class="fas fa-coins"></i> Mesas de Cash Game</li>
+                <div class="two-images">
+                    <div class="image-container">
+                        <img src="images/cashgame1.webp" alt="No Limit Hold'em">
+                        <p>No Limit Hold'em</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="images/cashgame2.webp" alt="Ring Games">
+                        <p>Ring Games</p>
+                    </div>
+                </div>
+                <li><i class="fas fa-chalkboard-teacher"></i> Aulas de Poker</li>
+                <div class="single-image">
+                    <img src="images/aula.jpg" alt="Aulas de Poker">
+                </div>
+            </ul>
+        </section>
+        
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma plataforma dedicada a proporcionar a melhor experiência de poker online.</p>
+        </section>
+        
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Seu email" required>
+                
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" placeholder="Sua mensagem" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <div class="cta-container">
+            <button id="cta-button">Saiba Mais</button>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

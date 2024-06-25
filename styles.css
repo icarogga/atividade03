@@ -1,0 +1,229 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #e74c3c;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --green-color: #2ecc71;
+    --black-color: #000000;
+    --red-color: #e74c3c;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--black-color);
+    color: var(--green-color);
+    padding: 1em 0;
+    position: relative;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+    overflow: hidden;
+}
+
+.logo-container {
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 60px;
+    margin-right: 1em;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+header p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+nav {
+    float: right;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 2em;
+}
+
+nav ul li a {
+    color: var(--green-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--red-color);
+}
+
+.background-image {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 2em 0;
+    text-align: center;
+    position: relative;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 1em auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+#produtos ul {
+    list-style: none;
+    padding: 0;
+}
+
+#produtos li {
+    margin: 1em 0;
+    font-size: 1.2em;
+    color: var(--primary-color);
+    display: block;
+    text-align: center;
+}
+
+#produtos .single-image img, 
+#produtos .two-images .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#produtos .two-images {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+#produtos .image-container {
+    width: 48%;
+    margin: 1%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+#produtos .image-container p {
+    margin-top: 0.5em;
+    font-size: 1em;
+    color: var(--primary-color);
+}
+
+#produtos .image-container:hover img {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+form {
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+form label {
+    display: block;
+    margin-top: 1em;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+form button {
+    margin-top: 1em;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-container {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.cta-container button {
+    background-color: var(--red-color);
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.cta-container button:hover {
+    background-color: #c0392b; /* Um tom mais escuro de vermelho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        text-align: center;
+    }
+
+    .logo-container, nav {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 0.5em;
+    }
+
+    #produtos .two-images .image-container {
+        display: block;
+        width: 100%;
+        margin: 5% 0;
+    }
+}
